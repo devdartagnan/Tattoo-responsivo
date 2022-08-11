@@ -241,6 +241,9 @@ header .toggle-button img {
   margin: 1rem;
   width: 125px;
   cursor: pointer;
+  border: 3px solid;
+  border-color: #D9D9D9;
+  box-shadow: 1px 1px 5px 1px #AFAFAF;
 }
 
 .show-all {
@@ -258,7 +261,7 @@ header .toggle-button img {
 }
 
 .cards__img:hover {
-  opacity: 0.7;
+  opacity: 0.3;
 }
 
 .modal {

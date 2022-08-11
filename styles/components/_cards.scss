@@ -29,6 +29,9 @@
   margin: 1rem;
   width: 125px;
   cursor: pointer;
+  border: 3px solid;
+  border-color: $cor-quartenaria;
+  box-shadow: 1px 1px 5px 1px #AFAFAF;
 }
 
 .show-all {
@@ -47,7 +50,7 @@
 }
 
 .cards__img:hover {
-  opacity: 0.7;
+  opacity: 0.3;
 }
 
 .modal {

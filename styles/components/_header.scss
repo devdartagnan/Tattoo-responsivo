@@ -1,0 +1,90 @@
+@import '../abstract/variaveis';
+
+header{
+    align-items: center;
+    background-color: $cor-primaria;
+    display: flex;
+    max-height: 102px;
+    padding: 1.4rem 0 0.4rem 0;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    box-shadow: $shadow;
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 3rem;
+        .navbar__links{
+            display: none;
+            &:hover{
+                text-decoration: line-through;
+            }
+        }
+    }
+    .toggle-button{
+        border-style: none;
+        background-color: $cor-primaria;
+        border-radius: 0 0 6px 6px;
+        cursor: pointer;
+        height: 40px;
+        position: absolute;
+        right: 30px;
+        top: 95px;
+        width: 40px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        img{
+            padding-top: 5px;
+        }      
+    }
+}
+
+.banner-mobile{
+    background: url('../assests/banner-mobile.png') no-repeat center;
+    width: 100vw;
+    height: 372px;
+    display: flex;
+    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #B6BBB9;
+    .banner__info{
+        display: none;
+    }
+
+}
+@media screen and(min-width: 540px) and(max-width: 999px) {
+.banner-mobile {
+    background: url("../../assests/banner-tablet.jpg") no-repeat center;
+    background-color: #B6BBB9;
+    .banner__info{
+        display: flex;
+        align-self: center;
+        font-size: 32px;
+        font-weight: 600;
+        text-align: right;
+        width: 240px;
+        margin-left: 25%;
+        color: $cor-terciaria;
+        grid-column-start: 2;        
+    }
+    }
+}
+@media screen and (min-width: 1000px) {
+    .banner-mobile {
+        background: url("../../assests/banner.jpg") no-repeat center;
+        background-color: #B6BBB9;
+        .banner__info{
+            display: flex;
+            align-self: center;
+            font-size: 42px;
+            font-weight: 600;
+            text-align: right;
+            width: 270px;
+            color: $cor-terciaria;
+            grid-column-start: 2;
+        }
+    }
+}

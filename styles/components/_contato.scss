@@ -1,0 +1,43 @@
+@import '../abstract/variaveis';
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .labels{
+        margin-bottom: 12px;
+        margin-top: 16px;
+        font-weight: 600;
+    }
+    .inputs{
+        text-align: center;
+        margin-bottom: 12px;
+        width: 306px;
+        height: 60px;
+        border-radius: 8px;
+        border: solid 2px $cor-sescundaria;
+        &.area{
+            height: 120px ;
+        }
+    }
+    .botao-contato{
+        width: 180px;
+        color: $cor-primaria;
+        background-color: $cor-sescundaria;
+        height: 50px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 1rem;
+        font-family: $font;
+        border-style: none;
+    }
+}
+@media screen and(min-width: 800px)  {
+    .form{
+        .inputs{
+            width: 550px;
+            height: 45px;
+        }
+    }
+}

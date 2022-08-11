@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap" rel="stylesheet"> 
+    <title>Victor Hugo | Tattoo</title>
+
+  </head>
+  <body>
+      <header class="cabecalho">
+        <a href="index.html"><img src="assests/Logo.svg" alt="" class="logo"></a>
+        <div class="main">
+          <label class="menu-button-wrapper" for="">
+            <input type="checkbox" class="menu-button">
+            <div class="icon-wrapper">
+              <label class="hamburger">
+                <input class="hamburger-input" type="checkbox">
+                <span class="hamburger-line first"></span>
+                <span class="hamburger-line second"></span>
+                <span class="hamburger-line third"></span>
+              </label>
+            </div>
+            <div class="item-list">
+              <div><a href="index.html">Início</a></div>
+              <div><a href="portifolio.html">Portifólio</a></div>
+              <div><a href="artes-sugestoes.html">Artes e sketches</a></div>
+              <div><a href="contato.html">Contato e sugestões</a></div>
+            </div>
+          </label>
+      </header>
+      <section class="cards card-secundario">
+        <h3 class="card__titulo">Contato e sugestões</h3>
+        <form action="https://api.staticforms.xyz/submit" method="post" class="form">
+          <input type="hidden" name="accessKey" value="732bf6eb-cc7c-44f7-9e45-4bb4976082e4">
+          <label class="labels">Nome</label>
+          <input placeholder="Digite seu nome" name="name" type="text" class="inputs" required>
+          <label class="labels">Email</label>
+          <input placeholder="Digite seu email" name="email" type="email" class="inputs" required>
+          <label class="labels">Telefone</label>
+          <input placeholder="(**) ***** ****" name="phone" maxlength="11" minlength="10" type="tel" class="inputs" required>
+          <label class="labels">Escreva sua mensagem</label>
+          <textarea placeholder="Escreva o motivo de seu contato" cols="30" rows="10" name="message" class="inputs area" required></textarea>
+          <input type="hidden" name="redirectTo" value="https://site-tattoo-responsivo.vercel.app/contato.html">
+          <button class="botao-contato">Envie sua mensagem</button>
+          </form>
+      </section>
+      <section class="footer">
+        <h4 class="footer__titulo">Contato</h4>
+        <p class="footer__info">Email: Victorhugo.bastos@hotmail.com</p>
+        <p class="footer__info">Telefone: +55 31 9348-0007</p>
+        <div class="footer__media">
+          <a href="https://bit.ly/37zQYUL"><img src="assests/WhatsApp.svg" alt="" class="media"></a>
+          <a href="https://www.instagram.com/victorbastostattoo/"><img src="assests/IG.svg" alt="" class="media"></a>
+        </div>
+        <span class="dev">Desenvolvido por @DevDartagnan</span>
+      </section>
+      <script src="scripts/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+@import '../abstract/variaveis';
+
+.main{
+  position: absolute;
+  top: 22px;
+  right: 1rem;
+
+}
+
+  .hamburger {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+
+    
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 6px;
+      background: $cor-primaria;
+    }
+    
+    .hamburger-input {
+      position: absolute;
+      opacity: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      cursor: pointer;
+    }
+    
+    .hamburger-line {
+      width: 26px;
+      background: $cor-sescundaria;
+      height: 2px;
+      display: flex;
+      border-radius: 6px;
+      transition: transform 0.4s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+      position: relative;
+      align-self: center;
+    }
+  }
+  
+  .menu-button-wrapper {
+    position: relative;
+    display: inline-block;
+    
+    .item-list {
+      position: absolute;
+      top: 90px;
+      transform: translateX(-50%) scale(0);
+      transform-origin: center;
+      transition: all 0.4s cubic-bezier(0.54, -0.10, 0.57, 0.57);
+      background-color: $cor-primaria;
+      color: $cor-sescundaria;
+      width: 200px;
+      left: 50%;
+      padding: 15px 0;
+      text-align: left;
+      border-radius: 100px;
+      font-weight: 500;
+      opacity: 0;
+      user-select: none;
+      
+      div {
+        padding: 10px 30px;
+        a{
+          text-decoration: none;
+          color: $cor-sescundaria;
+        }
+      }
+    }
+    
+    .menu-button {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      left: 0;
+      z-index: 2;
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+  
+
+  .menu-button {
+    &:checked ~ .item-list {
+      transform: translateX(-90%) translateY(-10px) scale(1);
+      border-radius: 20px;
+      opacity: 1;
+      user-select: auto;
+    }  
+  }
+  
+
+  
+  

@@ -8,7 +8,7 @@
 | :rocket: URL         | https://tattoo-responsivo.vercel.app/index.html
 
 ## PT - Detalhes do projeto
-Projeto de um simples site portfolio de tatuagem, feito usando sass ,javascript e um compilador sass.
+Projeto de um simples site portfolio de tatuagem, feito usando sass, javascript e um compilador sass.
 Scss usado para estilização e respnsividade, enquanto javascript foi usado para os modais e o menu.
 
 ## EN - Project details

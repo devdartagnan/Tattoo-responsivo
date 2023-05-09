@@ -7,9 +7,6 @@
 | :label: Tecnologias | js, html, sass, sass compiler
 | :rocket: URL         | https://tattoo-responsivo.vercel.app/index.html
 
-<!-- Inserir imagem com a #vitrinedev ao final do link -->
-![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
-
 ## PT - Detalhes do projeto
 Projeto de um simples site portfolio de tatuagem, feito usando sass ,javascript e um compilador sass.
 Scss usado para estilização e respnsividade, enquanto javascript foi usado para os modais e o menu.
